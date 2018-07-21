@@ -1,10 +1,15 @@
 <?php
-
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include_once('vendor/DreamTeam/Router.php');
+require_once __DIR__ . '/vendor/autoload.php';
+
+//include_once('vendor/DreamTeam/Router.php');
+//include_once('app/App2.php');
 
 use \DreamTeam\Router;
+use \app\App2;
 
-var_dump(Router::init()->getParams());
+
+App2::hel();
+//var_dump(Router::init()->getParams());
